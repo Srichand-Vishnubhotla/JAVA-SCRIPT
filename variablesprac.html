@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <p>Cart Quantity</p>
+        <button onclick="console.log(`Cart Quantity: ${cartQuantity}`)"
+        >
+            Show Quantity
+        </button>
+        <button 
+            onclick="
+            if(maxQuantity==cartQuantity)
+        {
+            alert('Cart is full');
+        }
+        else
+        {
+            cartQuantity=cartQuantity+1;
+            console.log(`Cart Quantity:${cartQuantity};`);
+        }
+        "
+           
+        >
+            Add to cart
+        </button>
+        <button
+        onclick="
+        if(maxQuantity===cartQuantity)
+        {
+            alert('Cart is full');
+        }
+        else
+        {
+            cartQuantity+=2;
+            console.log(`Cart Quantity:${cartQuantity};`)
+        }
+       "
+        >+2
+        </button>
+        <button
+        onclick="
+        if(maxQuantity===cartQuantity)
+        {
+            alert('Cart is full');
+        }
+        else
+        {
+            cartQuantity+=3;
+        console.log(`Cart Quantity:${cartQuantity};`)
+        }
+        "
+        >+3
+        </button>
+        <button onclick="
+        if(maxQuantity===cartQuantity)
+        {
+            alert('Cart is full');
+        }
+        else
+        {
+            cartQuantity +=4;
+        console.log(`Cart Quantity:${cartQuantity};`);
+        }
+        "
+        >
+            +4
+        </button>
+        <button onclick="
+        if(maxQuantity===cartQuantity)
+        {
+            alert('Cart is full');
+        }
+        else
+        {
+            cartQuantity +=5;
+            console.log(`Cart Quantity:${cartQuantity};`)
+        }
+       "
+        >
+            +5
+        </button>
+
+        <button onclick="
+        if(cartQuantity<=0)
+        {
+            alert('The cart has no items left');
+        }
+        else
+        {
+            cartQuantity--;
+        console.log(`Cart Quantity:${cartQuantity};`)
+        }
+        "
+        >
+            Remove from cart
+        </button>
+        <button onclick="
+        if(cartQuantity<=0)
+        {
+            alert('The cart has no items left');
+        }
+        else
+        {
+            cartQuantity -=2;
+        console.log(`Cart Quantity:${cartQuantity};`);
+        }
+        
+        "
+        >
+            -2
+        </button>
+        <button onclick="
+        if(cartQuantity<=0)
+        {
+            alert('The cart has no items left');
+        }
+        else
+        {
+            cartQuantity -=3;
+        console.log(`Cart Quantity:${cartQuantity};`);
+        }
+        
+        "
+        >
+            -3
+        </button>
+        <button
+            onclick="cartQuantity=0;
+            console.log(`Cart Quantity:${cartQuantity}`);
+            alert('Cart has been reset');"
+            
+        >Reset cart
+        </button>
+
+        <script>
+            let cartQuantity=0;
+            let maxQuantity=10;
+            let minQuantity=0;
+        </script>
+    </body>
+</html>

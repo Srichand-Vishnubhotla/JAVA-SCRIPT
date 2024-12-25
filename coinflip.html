@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coin-Flip</title>
+    </head>
+    <body>
+        <button onclick="
+            let result=Math.random();
+                if(result<0.5)
+            {
+                result='Heads';
+            }
+            else if(result>0.5)
+            {
+                result='Tail';
+            }
+            if(result==='Heads')
+            {
+                alert(`You win!.Computer chose ${result} `);
+            }
+            else
+            {
+                alert(`You lose!.Computer chose ${result} `);
+            }
+            "
+        >
+            Head
+        </button>
+
+        <button onclick="
+        let result=Math.random();
+            if(result<0.5)
+        {
+            result='Heads';
+        }
+        else if(result>0.5)
+        {
+            result='Tail';
+        }
+        if(result==='Heads')
+        {
+            alert(`You lose!.Computer chose ${result} `);
+        }
+        else
+        {
+            alert(`You win!.Computer chose ${result} `);
+        }
+        ">
+            Tail
+        </button>
+        <script>
+            
+
+        </script>
+    </body>
+</html>

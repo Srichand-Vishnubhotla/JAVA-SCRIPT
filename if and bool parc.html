@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BOOL AND IF</title>
+    </head>
+    <body>
+        <script>
+            let hour=14;
+            let name='Srichand';
+            if(hour>=6 && hour<=12)
+        {
+            console.log(`Good morning! ${name}`);
+        }
+        else if(hour>=13 && hour<=17)
+        {
+            console.log(`Good Afternoon! ${name}`);
+        }
+        else 
+        {
+            console.log(`Good night! ${name}`);
+        }
+
+        let age=25;
+        const isHoliday=false;
+        if(age<=6 || age>=65)
+        {   
+            if(isHoliday===false)
+            {
+            console.log('Discount');
+            }
+            else
+            {
+                console.log('Holiday');
+            }
+        }
+        
+        else
+        {
+            console.log('No Discount');
+        }
+        </script>
+    </body>
+</html>
